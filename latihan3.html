@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-rows: 15% auto 15% 5%;
+        height: 100%;
+    }
+    
+    .grid-container>.navbar {
+        background: #7f8c8d;
+    }
+    
+    .grid-container>.content {
+        background: #ecf0f1;
+    }
+    
+    .grid-container>.footer {
+        background: #95a5a6;
+    }
+    
+    .grid-container>.copyright {
+        background: #bdc3c7;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .flex-container>div {
+        background: red;
+        padding: 10px;
+    }
+    
+    .navbar-button>div {
+        float: left;
+        padding: 7px;
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <div class="navbar">
+            <div class="flex-container">
+                <div class="navbar-button">
+                    <div>button</div>
+                    <div>Profil</div>
+                    <div>Photo</div>
+                    <div>Profil</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">2</div>
+        <div class="footer">3</div>
+        <div class="copyright">4</div>
+        
+    </div>
+</body>
+
+</html>

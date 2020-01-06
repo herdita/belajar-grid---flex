@@ -1,0 +1,236 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+<style>
+    body {
+        margin: 0px;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-rows: 25% auto 15%;
+        height: 100%;
+    }
+    
+    .grid-container>header {
+        background-color: dodgerblue;
+    }
+    
+    .grid-container>article {
+        background-color: whitesmoke;
+    }
+    
+    .grid-container>footer {
+        background-color: dodgerblue;
+    }
+    
+    .grid-container-header {
+        display: grid;
+        grid-template-rows: 20% 5%;
+        height: 100%;
+    }
+    
+    .grid-container-header>div {
+        background-color: rgba(0, 0, 255, 0.424);
+    }
+    
+    .grid-container-header>nav {}
+    
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-container-header>div>img {
+        width: 80px;
+        height: auto;
+        float: left;
+    }
+    
+    .text-brand {
+        color: rgba(245, 245, 245, 0.897);
+        margin-left: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .flex-container-nav {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+    }
+    
+    nav ul li {
+        float: left;
+        padding-left: 20px;
+        list-style-type: none;
+        display: block;
+    }
+    
+    nav>ul>li>a {
+        float: left;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .flex-container-nav ul li a:hover {
+        color: blue;
+        display: block;
+    }
+    
+    .grid-container-article>div {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        width: 100%;
+    }
+    
+    .flex-container-article {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .flex-container-article>div {
+        padding: 10px 20px;
+        margin: 0 10px 0 10px;
+    }
+    
+    .dropdown {
+        display: none;
+        background: rgba(0, 255, 255, 0.459);
+        margin-top: -20px;
+        padding: 0px 0 10px 60px;
+        position: relative;
+    }
+    
+    .dropdown>h2 {
+        padding-top: 20px;
+    }
+    
+    .artikel-1 {
+        text-align: justify;
+    }
+    
+    .artikel-1>hr {
+        margin-top: -10px;
+    }
+    
+    .grid-artikel2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+    }
+    
+    .grid-artikel2>div {
+        margin: 15px 10px 0px 0px;
+        padding-left: 10px;
+    }
+    
+    .container {
+        margin: 10px 200px;
+    }
+    
+    .grid-artikel2>div>img {
+        width: 450px;
+        height: auto;
+    }
+    
+    article a:hover+.dropdown {
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="grid-container-header">
+                <div class="flex-container">
+                    <img src="pancasila.png" alt="">
+                    <h1 class="text-brand">Indonesia ku</h2>
+                </div>
+                <nav class="flex-container-nav ">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Works</a></li>
+                        <li><a href="">Get Quete</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <article>
+            <a href="">home</a>
+            <div class="dropdown">
+                <h2>We Are The design art</h2>
+                <hr>
+                <p>Welcome to art the picture napasku karna demi <br>cinta telah kurelakan demi nama cinta telah ku persembahkan hatimu karna, dalam setiap napasku karna demi cinta ooo. karna sikap mu itu telah what is that.
+                </p>
+            </div>
+            <div class="grid-container-article">
+                <div class="flex-container-article">
+                    <div class="artikel-1">
+                        <h2>Who are we</h2>
+                        <hr>
+                        <p>
+                            napasku karna demi cinta telah kurelakan demi nama cinta telah ku persembahkan hatimu karna, dalam setiap napasku karna demi cinta ooo. karna sikap mu itu telah what is that.
+                        </p>
+                    </div>
+                    <div class="artikel-1">
+                        <h2>What we can do</h2>
+                        <hr>
+                        <p>
+                            Website design / redisign
+                        </p>
+                        <hr>
+                        <p>
+                            Website design / redisign
+                        </p>
+                        <hr>
+                        <p>
+                            Website design / redisign
+                        </p>
+                        <hr>
+                        <p>
+                            Website design / redisign
+                        </p>
+                        <hr>
+                        <p>
+                            Website design / redisign
+                        </p>
+                    </div>
+                    <div class="artikel-1">
+                        <h2>Who are we</h2>
+                        <hr>
+                        <p>
+                            napasku karna demi cinta telah kurelakan demi nama cinta telah ku persembahkan hatimu karna, dalam setiap napasku karna demi cinta ooo. karna sikap mu itu telah what is that.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- rows-2 -->
+            <div class="container">
+                <h2>Recent Client</h2>
+                <hr>
+                <div class="grid-artikel2">
+                    <div><img src="train.png" alt=""></div>
+                    <div><img src="train.png" alt=""></div>
+                </div>
+            </div>
+        </article>
+        <footer>
+            3
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto 200px;
+        grid-gap: 11px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    
+    .grid-container-row-left {
+        display: grid;
+        grid-template-rows: 350px 350px 350px;
+        grid-gap: 11px;
+    }
+    
+    .grid-container-row-left>div {
+        padding: 20px;
+        border: 1px solid white;
+        background: dodgerblue;
+    }
+    
+    .grid-container-row-right {
+        display: grid;
+        grid-template-rows: 100px 200px 300px 300px;
+        grid-gap: 11px;
+    }
+    
+    .grid-container-row-right>div {
+        padding: 20px;
+        border: 1px solid white;
+        background: dodgerblue;
+    }
+    
+    @media (max-width:768px) {
+        .grid-container-row-right {
+            display: none;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+    }
+    
+    @media (max-width:268px) {
+        .grid-container-row-right {
+            display: none;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+    
+    @media (max-width:1200px) {
+        .grid-container {
+            display: grid;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-container-row-left">
+            <div class="item1">
+                <div></div>
+            </div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+        </div>
+        <div class="grid-container-row-right">
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+            <div class="item6">6</div>
+            <div class="item7">7</div>
+        </div>
+    </div>
+</body>
+
+</html>
